@@ -4,16 +4,24 @@ import { AuthService } from './auth.service';
 @Controller('auth')
 export class AuthController {
   constructor(private authService: AuthService) {}
-  
+
   @Post('/local/signup')
-  signupLocal() {}
+  signupLocal() {
+    this.authService.signupLocal();
+  }
 
   @Post('/local/signin')
-  signinLocal() {}
+  signinLocal() {
+    this.authService.signinLocal();
+  }
 
   @Post('/logout')
-  logout() {}
+  logout() {
+    this.authService.logout();
+  }
 
   @Post('/refresh')
-  refreshTokens() {}
+  refreshTokens() {
+    this.authService.refreshTokens();
+  }
 }
