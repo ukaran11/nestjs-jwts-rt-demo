@@ -7,4 +7,10 @@
 
 -> Work on schema.prisma to add/delete/alter models
 -> To create migration
+  npx prisma migrate dev --create-only
 
+-> To push the migrations to db
+  npx prisma db push
+  
+-> To visualize prisma table
+  npx prisma studio
