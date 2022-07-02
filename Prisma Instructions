@@ -1,0 +1,10 @@
+-> Installing prisma
+  npm i -D prisma@latest
+  npm i @prisma/client
+
+-> Initializing prisma
+  npx prisma init
+
+-> Work on schema.prisma to add/delete/alter models
+-> To create migration
+
